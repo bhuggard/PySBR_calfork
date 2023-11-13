@@ -37,15 +37,16 @@ class Query:
         headers = {
             "User-Agent": ua.random,
             "Content-Type": "application/json",
-            "Accept": "application/json, text/plain, */*",
+            "Accept": "application/json, text/plain, /",
             "Accept-Encoding": "gzip, deflate, br",
             "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8",
             "Connection": "keep-alive",
-            "Host": "www.sportsbookreview.com",
-            "Referer": "https://www.sportsbookreview.com/betting-odds/",
+            "site-domain": "bmrodds-com",
+            "origin": "https://www.bookmakersreview.com/",
+            "referer": "https://www.bookmakersreview.com/"
         }
         transport = RequestsHTTPTransport(
-            url="https://www.sportsbookreview.com/ms-odds-v2/odds-v2-service",
+            url="https://ms.virginia.us-east-1.bookmakersreview.com/ms-odds-v2/odds-v2-service",
             headers=headers,
         )
         self.client = Client(transport=transport, fetch_schema_from_transport=False)
