@@ -14,6 +14,11 @@ Classifier: Programming Language :: Python :: 3.9
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 License-File: LICENSE
+Requires-Dist: gql
+Requires-Dist: pandas
+Requires-Dist: pytz
+Requires-Dist: pyyaml
+Requires-Dist: fake-useragent
 
 # PySBR
 
